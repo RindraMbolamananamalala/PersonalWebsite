@@ -1,4 +1,4 @@
-package org.rindraibi.website;
+package com.rindraibi.website;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
