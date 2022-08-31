@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.rindraibi.website.business.model.domainobject.Identity;
 
 /**
- * 
+ * The interface class dedicated to any need of DAO service related to the Identity.
  * @author Rindra Mbolamananamalala
  *
  */
