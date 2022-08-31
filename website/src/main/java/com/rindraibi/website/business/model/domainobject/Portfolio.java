@@ -7,6 +7,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /**
  * 
  * @author Rindra Mbolamananamalala
@@ -27,6 +29,7 @@ public class Portfolio extends RindraIbiDO{
 	
 	@ManyToOne
 	@JoinColumn(name="RESUME_ID")
+	@JsonIgnore
 	private Resume resume;
 
 	public String getImage() {

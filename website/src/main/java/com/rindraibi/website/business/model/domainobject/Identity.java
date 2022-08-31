@@ -11,6 +11,8 @@ import javax.validation.constraints.Email;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /**
  * 
  * @author Rindra Mbolamanananamalala
@@ -56,6 +58,7 @@ public class Identity extends RindraIbiDO{
 	
 	@OneToOne
 	@JoinColumn()
+	@JsonIgnore
 	private Resume resume;
 
 	public String getFirstName() {

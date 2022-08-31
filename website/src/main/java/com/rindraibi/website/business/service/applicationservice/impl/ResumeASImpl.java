@@ -36,7 +36,7 @@ public class ResumeASImpl implements ResumeASIntf{
 	 * @return The Resume DTO corresponding to the first line of Resume stored in DB.
 	 */
 	@Override
-	public ResumeDTO getResume(){
+	public ResumeDTO getResume() throws NullPointerException{
 		List<Resume> allResumesFoundInDB = this.resumeDAO.findAll();
 		if(!allResumesFoundInDB.isEmpty()) {
 			// At least a Resume is stored inside the DB, only the first 

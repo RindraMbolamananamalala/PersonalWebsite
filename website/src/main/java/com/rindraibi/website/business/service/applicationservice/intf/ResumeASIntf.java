@@ -13,6 +13,6 @@ public interface ResumeASIntf {
 	 * 
 	 * @return The Resume DTO corresponding to the first line of Resume stored in DB.
 	 */
-	public ResumeDTO getResume();
+	public ResumeDTO getResume() throws NullPointerException;
 
 }
