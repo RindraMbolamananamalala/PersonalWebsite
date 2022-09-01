@@ -30,7 +30,7 @@ public class ResumeController extends RindraIbiController{
 	/**
 	 * Returns the unique Resume used by the whole Web Application.
 	 */
-	@RequestMapping(value = "/resume", method = RequestMethod.GET)
+	@RequestMapping(value = "/api/resume", method = RequestMethod.GET)
 	public ResumeDTO getResume() {
 		String operationMessage;
 		try {
